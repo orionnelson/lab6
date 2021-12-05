@@ -13,6 +13,7 @@ public class ValueToConvert extends ConcreteSubject{
 	 * An instance of ProgPanel.
 	 */
 	private ProgPanel panel;
+	
 	/**
 	 * A static double field to hold the latest saved cm input.
 	 */
