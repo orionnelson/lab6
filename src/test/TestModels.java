@@ -13,13 +13,16 @@ import java.awt.Graphics;
 import javax.swing.JPanel;
 
 import model.CentimetersConversionArea;
+import model.ConcreteSubject;
 import model.FeetConversionArea;
 import model.MeterConversionArea;
+import model.ValueToConvert;
 
 /**
  *	Class to test models and in game events
  */
-public class TestModels{
+public class TestModels {
+
 	/**
 	 *  Checks conversion of CentArea to String Self and 
 	 */
