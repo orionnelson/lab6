@@ -29,10 +29,6 @@ import model.MeterConversionArea;
 public class TestModels{
 
 	/**
-	 *  Checks that the game player names are correctly converted
-	 */
-
-	/**
 	 *  Checks conversion of CentArea to String Self and
 	 * Default Frame for testing
 	 */
