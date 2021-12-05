@@ -23,10 +23,9 @@ import model.ValueToConvert;
  */
 public class TestModels {
 
-	
 	double areaCm = 25.0;
 	/**
-	 *  Checks conversion of CentArea to String Self and 
+	 *  Checks conversion of CentArea to String Self and
 	 */
 	@Test
 	@DisplayName("Test Centimeters Conversion to Feet")
@@ -49,8 +48,8 @@ public class TestModels {
 			
 		assertEquals(feetStr,p.getFeetConvArea().getText());
 	}
-	
-	
+
+
 	@Test
 	@DisplayName("Test Centimeters Conversion to Meters ")
 	public void testCentM(){
@@ -65,11 +64,11 @@ public class TestModels {
 			// All testing will be done as strings for absolute coverage since observer pattern makes testing difficult.
 			ValueToConvert v = new ValueToConvert(p);
 			v.save(cmStr);
-			
+
 			System.out.println(p.getFeetConvArea().getText());
 			System.out.println(p.getMeterConvArea().getText());
 			System.out.println(p.getCMConvArea().getText());
-			
+
 		assertEquals(mStr,p.getMeterConvArea().getText());
 	}
 
@@ -77,7 +76,7 @@ public class TestModels {
 	public void testCentAreaStringToString(){
 		ProgPanel p = new ProgPanel();
 		double areaM = 0.25;
-		
+
 		p.getCMConvArea().setText(Double.toString(areaCm));
 
 		assert(Double.parseDouble(p.getCMConvArea().getText()) == areaCm);
