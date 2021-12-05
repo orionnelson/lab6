@@ -27,7 +27,8 @@ public class ProgFrame extends JFrame{
 	MenuOptions menu;
 
 	/**
-	 * A constructor for the frame.
+	 * A constructor for the frame. It adds the panel
+	 * then sets the menu and size.
 	 */
 	public ProgFrame() {
 		panel = new ProgPanel();
