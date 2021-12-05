@@ -42,3 +42,11 @@ jobs:
       with:
         token: '59ecf91e-0b90-4d35-8fee-418636462145'
         file: '*jacoco.xml'
+    - name : Build Final Package Jar With Javadoc 
+      run:  mvn --batch-mode --update-snapshots verify && mkdir staging && cp target/*.jar staging
+      
+    - name : Output The Files As A Build Artifact
+      uses: actions/upload-artifact@v2
+      with: 
+           name: Package
+           path: staging
