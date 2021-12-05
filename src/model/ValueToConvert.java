@@ -37,8 +37,9 @@ public class ValueToConvert extends ConcreteSubject{
 	}
 	
 	/**
-	 * A method for other classes to access the 
+	 * A method for other classes to access the
 	 * current cm input;
+	 * @return Returns the cm input
 	 */
 	public static double getSavedInput() {
 		return savedInput;
