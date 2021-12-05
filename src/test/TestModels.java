@@ -54,6 +54,8 @@ public class TestModels{
 			
 			
 			p.getCMConvArea().update();
+			p.getFeetConvArea().update();
+		        p.getMeterConvArea().update();
 			System.out.println(p.getFeetConvArea().getText());
 			System.out.println(p.getMeterConvArea().getText());
 			
