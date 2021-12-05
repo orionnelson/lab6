@@ -13,7 +13,6 @@ import model.MeterConversionArea;
  * This class represents the panel for the program
  * with the different conversion areas. It acts as
  * a receiver for the Command design pattern.
- *
  */
 public class ProgPanel extends JPanel{
 	/**
