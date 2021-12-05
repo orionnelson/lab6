@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import view.ProgPanel;
 import java.awt.Color;
 import java.awt.Graphics;
+import java.util.Objects;
 
 import javax.swing.JPanel;
 
@@ -23,7 +24,6 @@ import model.ValueToConvert;
  */
 public class TestModels {
 
-	double areaCm = 25.0;
 	/**
 	 *  Checks conversion of CentArea to String Self and
 	 */
@@ -72,14 +72,17 @@ public class TestModels {
 		assertEquals(mStr,p.getMeterConvArea().getText());
 	}
 
+
 	@Test
 	public void testCentAreaStringToString(){
 		ProgPanel p = new ProgPanel();
-		double areaM = 0.25;
+		double areaCm = 0.25;
 
-		p.getCMConvArea().setText(Double.toString(areaCm));
+		ValueToConvert v = new ValueToConvert(p);
+		//Test area Cm test is updated to "" if incorrect input
+		v.save("Garbage input");
+		assertEquals(p.getCMConvArea().getText(), "");
 
-		assert(Double.parseDouble(p.getCMConvArea().getText()) == areaCm);
 	}
-
 }
+
