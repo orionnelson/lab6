@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 
 import view.ProgPanel;
 import java.awt.Color;
-<<<<<<< HEAD
+
 import java.awt.Graphics;
 import java.util.Collection;
 import java.util.List;
@@ -18,13 +18,11 @@ import java.util.Objects;
 
 import javax.swing.JPanel;
 
-=======
 
 import model.CentimetersConversionArea;
 import model.FeetConversionArea;
 import model.MeterConversionArea;
 
->>>>>>> Update TestModels.java with test CMSubjectArea
 /**
  *	Class to test models and in game events
  */
@@ -35,11 +33,8 @@ public class TestModels{
 	 */
 
 	/**
-<<<<<<< HEAD
 	 *  Checks conversion of CentArea to String Self and
-=======
 	 * Default Frame for testing
->>>>>>> Update TestModels.java with test CMSubjectArea
 	 */
 	ProgPanel p = new ProgPanel();
 
@@ -55,7 +50,6 @@ public class TestModels{
 			String mStr = areaM + " m";
 
 
-<<<<<<< HEAD
 		assertEquals(feetStr,p.getFeetConvArea().getText());
 	}
 
@@ -79,8 +73,7 @@ public class TestModels{
 			System.out.println(p.getMeterConvArea().getText());
 			System.out.println(p.getCMConvArea().getText());
 
-		assertEquals(mStr,p.getMeterConvArea().getText());
-=======
+			assertEquals(mStr,p.getMeterConvArea().getText());
 			// All testing will be done as strings for absolute coverage since observer pattern makes testing difficult.
 			FeetConversionArea feetConvArea = new FeetConversionArea("0 ft",15,25);
 			feetConvArea.setEditable(false);
@@ -107,7 +100,6 @@ public class TestModels{
 
 
 		assertTrue(true);
->>>>>>> Update TestModels.java with test CMSubjectArea
 	}
 
 	/**
@@ -128,18 +120,7 @@ public class TestModels{
 		assert(Double.parseDouble(p.getCMConvArea().getText()) == areaCm);
 	}
 
-	@Test
-	@DisplayName("Test Centimeters Conversion to Null")
-	public void testCentAreaStringToString(){
-		ProgPanel p = new ProgPanel();
-		double areaCm = 0.25;
 
-		ValueToConvert v = new ValueToConvert(p);
-		//Test area Cm test is updated to "" if incorrect input
-		v.save("Garbage input");
-		assertEquals(p.getCMConvArea().getText(), "");
-
-	}
 
 	@Test
 	@DisplayName("Test Concrete Class Methods")
