@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CentimetersConversionArea.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">lab6</a> &gt; <a href="index.source.html" class="el_package">model</a> &gt; <span class="el_source">CentimetersConversionArea.java</span></div><h1>CentimetersConversionArea.java</h1><pre class="source lang-java linenums">package model;
+
+import javax.swing.JTextArea;
+
+/**
+ * This class represents the cm conversion area and is a 
+ * ConcreteObserver in the implementation of the Observer Design pattern.
+ */
+public class CentimetersConversionArea extends JTextArea implements Observer {
+
+	/**
+	 * This is an instance of ConcreteSubject
+	 */
+	private ConcreteSubject subject;
+	
+	/**
+	 * This constructor sets up the JTextArea 
+	 * @param text is what to display
+	 * @param row is the number of rows
+	 * @param col is the number of columns
+	 */
+	public CentimetersConversionArea(String text, int row, int col) {
+<span class="fc" id="L23">		super(text,row,col);</span>
+<span class="fc" id="L24">	}</span>
+	
+	/**
+	 * This method helps set the subject
+	 * @param sub is what to set subject as
+	 */
+	public void setSubject(ConcreteSubject sub) {
+<span class="nc" id="L31">		this.subject = sub;</span>
+<span class="nc" id="L32">	}</span>
+
+	/**
+	 * Unimplemented as can be changed by user.
+	 */
+	@Override
+	public void update() {
+
+<span class="fc" id="L40">	}</span>
+
+	
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
