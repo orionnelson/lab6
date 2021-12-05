@@ -118,7 +118,24 @@ public class TestModels{
 		assert(Double.parseDouble(p.getCMConvArea().getText()) == areaCm);
 	}
 
+	/**
+	 * Test Cent Area string is updated to Null
+	 */
+	@Test
+	public void testCentAreaStringForNull(){
+		double areaM = 0.25;
+		double areaFt = 0.8202099737532809;
+		double areaCm = 25.0;
+		//Set subject for meter and feet area needed to do conversion test
+		String feetStr = areaFt + " ft";
+		String cmStr = Integer.toString((int)(areaCm));
+		String mStr = areaM + " m";
 
+		ValueToConvert v = new ValueToConvert(p);
+		v.save("Garbage Input");
+
+		assertEquals(p.getCMConvArea().getText(), "");
+	}
 
 	@Test
 	@DisplayName("Test Concrete Class Methods")
