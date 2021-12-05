@@ -24,7 +24,6 @@ import model.ValueToConvert;
 public class TestModels {
 
 	
-	double areaCm = 25.0;
 	/**
 	 *  Checks conversion of CentArea to String Self and 
 	 */
@@ -94,11 +93,17 @@ public class TestModels {
 	@Test
 	public void testCentAreaStringToString(){
 		ProgPanel p = new ProgPanel();
-		double areaM = 0.25;
+		double areaCm = 0.25;
 		
-		p.getCMConvArea().setText(Double.toString(areaCm));
+		ValueToConvert v = new ValueToConvert(p);
+		v.save(Double.toString(areaCm);
 
-		assert(Double.parseDouble(p.getCMConvArea().getText()) == areaCm);
+		//Test area Cm test is updated
+		assertEquals(Double.parseDouble(p.getCMConvArea().getText()), areaCm);
+		
+		//Test area Cm test is updated to "" if incorrect input
+		v.save("Garbage input")
+		assert(Objects.equals(p.getCMConvArea().getText(), ""));		
 	}
 
 }
