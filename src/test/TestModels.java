@@ -71,5 +71,14 @@ public class TestModels {
 		assertEquals(mStr,p.getMeterConvArea().getText());
 	}
 
+	@Test
+	public void testCentAreaStringToString(){
+		ProgPanel p = new ProgPanel();
+		double areaM = 0.25;
+		
+		p.getCMConvArea().setText(Double.toString(areaCm));
+
+		assert(Double.parseDouble(p.getCMConvArea().getText()) == areaCm);
+	}
 
 }
