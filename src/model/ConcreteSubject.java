@@ -14,7 +14,7 @@ public class ConcreteSubject implements Subject {
 	/**
 	 * This method adds an observer to the observers
 	 * list as post-condition given an observer as pre-condition.
-	 * @param observer is the Observer to add.
+	 * @param obs is the Observer to add.
 	 */
 	@Override
 	public void addObserver(Observer obs) {
@@ -24,7 +24,7 @@ public class ConcreteSubject implements Subject {
 	/**
 	 * This method removes an observer from the observers
 	 * list as post-condition given an observer as pre-condition.
-	 * @param observer is the Observer to add.
+	 * @param obs is the Observer to add.
 	 */
 	@Override
 	public void removeObserver(Observer obs) {
