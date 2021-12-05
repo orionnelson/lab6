@@ -18,7 +18,7 @@ import javax.swing.KeyStroke;
 public class MenuOptions extends JMenuBar{
 	
 	/**
-	 * An instance of of ActionListenerCommand to save
+	 * An instance of ActionListenerCommand to save
 	 */
 	private ActionListenerCommand saveCommand;
 	
