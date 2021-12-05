@@ -24,7 +24,7 @@ public class ProgFrame extends JFrame{
 	/**
 	 * A menu which features the saveCommand.
 	 */
-	MenuOptions menu;
+	private MenuOptions menu;
 
 	/**
 	 * A constructor for the frame. It adds the panel
