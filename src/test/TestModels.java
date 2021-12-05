@@ -23,14 +23,11 @@ public class TestModels{
 	 *  Checks that the game player names are correctly converted
 	 */
 
-	/**
-	 * Default Frame for testing
-	 */
-	ProgPanel p = new ProgPanel();
-
 	@Test
 	@DisplayName("Test Centimeters Conversion to Area")
 	public void testCentArea(){
+			ProgPanel p = new ProgPanel();
+
 			double areaM = 0.25;
 			double areaFt = 0.8202099737532809;
 			double areaCm = 25.0;
@@ -73,6 +70,7 @@ public class TestModels{
 	 */
 	@Test
 	public void testCentAreaStringToString(){
+		ProgPanel p = new ProgPanel();
 		double areaM = 0.25;
 		double areaFt = 0.8202099737532809;
 		double areaCm = 25.0;
