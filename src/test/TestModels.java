@@ -6,28 +6,32 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-
 import view.ProgPanel;
 import java.awt.Color;
+import java.awt.Graphics;
+
+import javax.swing.JPanel;
 
 import model.CentimetersConversionArea;
+import model.ConcreteSubject;
 import model.FeetConversionArea;
 import model.MeterConversionArea;
+import model.ValueToConvert;
 
 /**
  *	Class to test models and in game events
  */
-public class TestModels{
+public class TestModels {
 
+	
+	double areaCm = 25.0;
 	/**
-	 *  Checks that the game player names are correctly converted
+	 *  Checks conversion of CentArea to String Self and 
 	 */
-
 	@Test
-	@DisplayName("Test Centimeters Conversion to Area")
+	@DisplayName("Test Centimeters Conversion to Feet")
 	public void testCentArea(){
 			ProgPanel p = new ProgPanel();
-
 			double areaM = 0.25;
 			double areaFt = 0.8202099737532809;
 			double areaCm = 25.0;
@@ -35,50 +39,45 @@ public class TestModels{
 			String feetStr = areaFt + " ft";
 			String cmStr = Integer.toString((int)(areaCm));
 			String mStr = areaM + " m";
-
-			
 			// All testing will be done as strings for absolute coverage since observer pattern makes testing difficult.
-			FeetConversionArea feetConvArea = new FeetConversionArea("0 ft",15,25);
-			feetConvArea.setEditable(false);
-			feetConvArea.setBackground(Color.GREEN);
-			p.add(feetConvArea);
-			
-			MeterConversionArea meterConvArea = new MeterConversionArea("0 m",15,25);
-			meterConvArea.setEditable(false);
-			meterConvArea.setBackground(Color.ORANGE);
-			p.add(meterConvArea);
-		
-			CentimetersConversionArea cmConvArea = new CentimetersConversionArea(cmStr,15,25);
-			cmConvArea.setBackground(Color.YELLOW);
-			p.add(cmConvArea);
-
-
+			ValueToConvert v = new ValueToConvert(p);
+			v.save(cmStr);
 			
 			System.out.println(p.getFeetConvArea().getText());
 			System.out.println(p.getMeterConvArea().getText());
-
-			p.getCMConvArea().setText(Double.toString(areaCm));
-
-			assert(Double.parseDouble(p.getCMConvArea().getText()) == areaCm);
-
+			System.out.println(p.getCMConvArea().getText());
 			
-		assertTrue(true);
+		assertEquals(feetStr,p.getFeetConvArea().getText());
+	}
+	
+	
+	@Test
+	@DisplayName("Test Centimeters Conversion to Meters ")
+	public void testCentM(){
+			ProgPanel p = new ProgPanel();
+			double areaM = 0.25;
+			double areaFt = 0.8202099737532809;
+			double areaCm = 25.0;
+			//Set subject for meter and feet area needed to do conversion test
+			String feetStr = areaFt + " ft";
+			String cmStr = Integer.toString((int)(areaCm));
+			String mStr = areaM + " m";
+			// All testing will be done as strings for absolute coverage since observer pattern makes testing difficult.
+			ValueToConvert v = new ValueToConvert(p);
+			v.save(cmStr);
+			
+			System.out.println(p.getFeetConvArea().getText());
+			System.out.println(p.getMeterConvArea().getText());
+			System.out.println(p.getCMConvArea().getText());
+			
+		assertEquals(mStr,p.getMeterConvArea().getText());
 	}
 
-	/**
-	 * Test Cent Area string is updated
-	 */
 	@Test
 	public void testCentAreaStringToString(){
 		ProgPanel p = new ProgPanel();
 		double areaM = 0.25;
-		double areaFt = 0.8202099737532809;
-		double areaCm = 25.0;
-		//Set subject for meter and feet area needed to do conversion test
-		String feetStr = areaFt + " ft";
-		String cmStr = Integer.toString((int)(areaCm));
-		String mStr = areaM + " m";
-
+		
 		p.getCMConvArea().setText(Double.toString(areaCm));
 
 		assert(Double.parseDouble(p.getCMConvArea().getText()) == areaCm);
