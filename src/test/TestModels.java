@@ -37,14 +37,16 @@ public class TestModels{
 	@Test
 	@DisplayName("Test Centimeters Conversion to Area")
 	public void testCentArea(){
-			double areaM = 0.25;
-			double areaFt = 0.8202099737532809;
-			double areaCm = 25.0;
-			//Set subject for meter and feet area needed to do conversion test
-			String feetStr = areaFt + " ft";
-			String cmStr = Integer.toString((int)(areaCm));
-			String mStr = areaM + " m";
+		double areaM = 0.25;
+		double areaFt = 0.8202099737532809;
+		double areaCm = 25.0;
+		//Set subject for meter and feet area needed to do conversion test
+		String feetStr = areaFt + " ft";
+		String cmStr = Integer.toString((int)(areaCm));
+		String mStr = areaM + " m";
 
+		ValueToConvert v = new ValueToConvert(p);
+		v.save(cmStr);
 
 		assertEquals(feetStr,p.getFeetConvArea().getText());
 	}
