@@ -23,6 +23,8 @@ import model.ValueToConvert;
  */
 public class TestModels {
 
+	
+	double areaCm = 25.0;
 	/**
 	 *  Checks conversion of CentArea to String Self and 
 	 */
