@@ -96,7 +96,7 @@ public class TestModels {
 		double areaCm = 0.25;
 
 		ValueToConvert v = new ValueToConvert(p);
-		v.save(Double.toString(areaCm);
+		v.save(Double.toString(areaCm));
 
 		//Test area Cm test is updated
 		assertEquals(Double.parseDouble(p.getCMConvArea().getText()), areaCm);
