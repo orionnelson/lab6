@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ActionSave.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">lab6</a> &gt; <a href="index.source.html" class="el_package">controller</a> &gt; <span class="el_source">ActionSave.java</span></div><h1>ActionSave.java</h1><pre class="source lang-java linenums">package controller;
+
+import model.ValueToConvert;
+import view.ProgPanel;
+
+/**
+ * 
+ * This is the ConcreteCommand class to
+ * implement Command design pattern.
+ * 
+ */
+public class ActionSave implements ActionListenerCommand {
+	
+	/**
+	 * This is a panel instance for the program.
+	 */
+	private ProgPanel panel;
+	
+	/**
+	 * This is a model instance for the program.
+	 */
+	private ValueToConvert model;
+
+	/**
+	 * This is the constructor which assigns Receiver
+	 * to the panel.
+	 * @param pan is the Command design pattern Receiver class
+	 */
+<span class="nc" id="L29">	public ActionSave(ProgPanel pan) {</span>
+<span class="nc" id="L30">		this.panel = pan;</span>
+<span class="nc" id="L31">		this.model =  new ValueToConvert(pan);</span>
+<span class="nc" id="L32">	}</span>
+
+	/**
+	 * Receives value in CentimetersConversionArea 
+	 * to update model.
+	 */
+	@Override
+	public void execute() {
+<span class="nc" id="L40">		String CMInput = panel.getCMConvArea().getText().trim();</span>
+<span class="nc" id="L41">		model.save(CMInput);</span>
+<span class="nc" id="L42">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
