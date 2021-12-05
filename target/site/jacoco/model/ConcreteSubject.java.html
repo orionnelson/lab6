@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ConcreteSubject.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">lab6</a> &gt; <a href="index.source.html" class="el_package">model</a> &gt; <span class="el_source">ConcreteSubject.java</span></div><h1>ConcreteSubject.java</h1><pre class="source lang-java linenums">package model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * This is the ConcreteSubject class for the 
+ * Observer design pattern.
+ */
+<span class="nc" id="L10">public class ConcreteSubject implements Subject {</span>
+
+<span class="nc" id="L12">	private List&lt;Observer&gt; observers = new ArrayList&lt;Observer&gt;();</span>
+
+	/**
+	 * This method adds an observer to the observers
+	 * list as post-condition given an observer as pre-condition.
+	 * @param obs is the Observer to add.
+	 */
+	@Override
+	public void addObserver(Observer obs) {
+<span class="nc" id="L21">		observers.add(obs);</span>
+<span class="nc" id="L22">	}</span>
+
+	/**
+	 * This method removes an observer from the observers
+	 * list as post-condition given an observer as pre-condition.
+	 * @param obs is the Observer to add.
+	 */
+	@Override
+	public void removeObserver(Observer obs) {
+<span class="nc" id="L31">		observers.remove(obs);	</span>
+<span class="nc" id="L32">	}</span>
+
+	/**
+	 * This method notifies observer in the observers list.
+	 */
+	@Override
+	public void notifyObservers() {
+<span class="nc bnc" id="L39" title="All 2 branches missed.">		for (Observer obs : observers) {</span>
+<span class="nc" id="L40">			obs.update();</span>
+<span class="nc" id="L41">		}</span>
+<span class="nc" id="L42">	}</span>
+	
+	
+	/**
+	 * Method to obtain current value saved.
+	 * @return the cm input.
+	 */
+	public double getInput() {
+<span class="nc" id="L50">		return ValueToConvert.getSavedInput();</span>
+	}
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
