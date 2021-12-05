@@ -31,7 +31,6 @@ public class ValueToConvert extends ConcreteSubject{
 		//add as observers
 		addObserver(this.panel.getFeetConvArea());
 		addObserver(this.panel.getMeterConvArea());
-		notifyObservers();
 	}
 	
 	/**
