@@ -99,7 +99,7 @@ public class TestModels {
 		v.save(Double.toString(areaCm));
 
 		//Test area Cm test is updated
-		assertEquals(Double.parseDouble(p.getCMConvArea().getText()), areaCm);
+		assertEquals(p.getCMConvArea().getText(), Double.toString(areaCm));
 
 		//Test area Cm test is updated to "" if incorrect input
 		v.save("Garbage input");
