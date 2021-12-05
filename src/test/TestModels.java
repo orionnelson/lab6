@@ -52,10 +52,11 @@ public class TestModels{
 			cmConvArea.setBackground(Color.YELLOW);
 			p.add(cmConvArea);
 			
+			addObserver(p.getFeetConvArea());
+			addObserver(p.getMeterConvArea());
+			notifyObservers();
 			
 			p.getCMConvArea().update();
-			p.getFeetConvArea().update();
-		        p.getMeterConvArea().update();
 			System.out.println(p.getFeetConvArea().getText());
 			System.out.println(p.getMeterConvArea().getText());
 			
