@@ -103,7 +103,6 @@ public class TestModels {
 
 		//Test area Cm test is updated to "" if incorrect input
 		v.save("Garbage input");
-		assert(Objects.equals(p.getCMConvArea().getText(), ""));
-	}
+		aassertEquals(p.getCMConvArea().getText(), "");
 
 }
