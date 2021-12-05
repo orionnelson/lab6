@@ -89,20 +89,17 @@ public class TestModels {
 
 
 
-
 	@Test
-	public void testCentAreaStringToString(){
+	@DisplayName("Test Centimeters Conversion to Meters with null ")
+	public void testCentAreaStringToString() {
 		ProgPanel p = new ProgPanel();
 		double areaCm = 0.25;
 
 		ValueToConvert v = new ValueToConvert(p);
-		v.save(Double.toString(areaCm));
-
-		//Test area Cm test is updated
-		assertEquals(p.getCMConvArea().getText(), Double.toString(areaCm));
-
 		//Test area Cm test is updated to "" if incorrect input
 		v.save("Garbage input");
 		assertEquals(p.getCMConvArea().getText(), "");
 
+	}
 }
+
