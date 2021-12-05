@@ -3,18 +3,21 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import model.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import view.ProgPanel;
 import java.awt.Color;
 import java.awt.Graphics;
-import java.util.Collection;
-import java.util.List;
 import java.util.Objects;
 
 import javax.swing.JPanel;
+
+import model.CentimetersConversionArea;
+import model.ConcreteSubject;
+import model.FeetConversionArea;
+import model.MeterConversionArea;
+import model.ValueToConvert;
 
 /**
  *	Class to test models and in game events
@@ -71,7 +74,6 @@ public class TestModels {
 
 
 	@Test
-	@DisplayName("Test Centimeters Conversion to Null")
 	public void testCentAreaStringToString(){
 		ProgPanel p = new ProgPanel();
 		double areaCm = 0.25;
@@ -81,16 +83,6 @@ public class TestModels {
 		v.save("Garbage input");
 		assertEquals(p.getCMConvArea().getText(), "");
 
-	}
-
-	@Test
-	@DisplayName("Test Concrete Class Methods")
-	public void testConcreteSubject() {
-		ProgPanel p = new ProgPanel();
-		ValueToConvert v = new ValueToConvert(p);
-
-		v.addObserver(p.getCMConvArea());
-		v.removeObserver(p.getMeterConvArea());
 	}
 }
 
