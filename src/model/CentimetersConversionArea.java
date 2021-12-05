@@ -16,7 +16,7 @@ public class CentimetersConversionArea extends JTextArea implements Observer {
 	/**
 	 * This constructor sets up the JTextArea 
 	 * @param text is what to display
-	 * @param row is the numbe of rows
+	 * @param row is the number of rows
 	 * @param col is the number of columns
 	 */
 	public CentimetersConversionArea(String text, int row, int col) {
@@ -36,6 +36,7 @@ public class CentimetersConversionArea extends JTextArea implements Observer {
 	 */
 	@Override
 	public void update() {
+
 	}
 
 	
