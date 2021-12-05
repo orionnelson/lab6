@@ -43,7 +43,8 @@
                                    <excludes>
                                        <exclude>**/test/*</exclude>
                                        <exclude>**/main/*</exclude>
-                                       <exclude>**/controller/MenubarListener.class</exclude>
+                                       <exclude>**/controller/*</exclude>
+					<exclude>**/view/*</exclude>
                                    </excludes>
                                 </configuration>
 				<executions>

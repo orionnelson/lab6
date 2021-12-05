@@ -28,9 +28,12 @@ public class ValueToConvert extends ConcreteSubject{
 		//Set subject for meter and feet areas
 		this.panel.getMeterConvArea().setSubject(this);
 		this.panel.getFeetConvArea().setSubject(this);
+		this.panel.getCMConvArea().setSubject(this);
 		//add as observers
 		addObserver(this.panel.getFeetConvArea());
 		addObserver(this.panel.getMeterConvArea());
+		addObserver(this.panel.getCMConvArea());
+		notifyObservers();
 	}
 	
 	/**
@@ -51,6 +54,7 @@ public class ValueToConvert extends ConcreteSubject{
 		//Check if number before saving
 		if (input.matches("^\\d+$")) {
 			ValueToConvert.savedInput = Integer.parseInt(input);
+			this.panel.getCMConvArea().setText(input);
 		} else {
 			//Clear as not a number
 			this.panel.getCMConvArea().setText("");
