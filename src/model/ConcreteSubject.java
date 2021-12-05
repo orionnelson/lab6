@@ -40,8 +40,8 @@ public class ConcreteSubject implements Subject {
 			obs.update();
 		}
 	}
-	
-	
+
+
 	/**
 	 * Method to obtain current value saved.
 	 * @return the cm input.
