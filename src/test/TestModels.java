@@ -121,7 +121,6 @@ public class TestModels{
 	}
 
 
-
 	@Test
 	@DisplayName("Test Concrete Class Methods")
 	public void testConcreteSubject() {
