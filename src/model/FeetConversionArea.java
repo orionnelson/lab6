@@ -3,7 +3,7 @@ package model;
 import javax.swing.JTextArea;
 
 /**
- * This class represents the feet conversion area and is a a type of 
+ * This class represents the feet conversion area and is a
  * ConcreteObserver in the implementation of the Observer Design pattern.
  */
 public class FeetConversionArea extends JTextArea implements Observer {
