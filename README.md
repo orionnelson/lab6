@@ -1,4 +1,4 @@
-# lab6 [![codecov](https://codecov.io/gh/orionnelson/lab6/branch/main/graph/badge.svg?token=dJEEOahZ8n)](https://codecov.io/gh/orionnelson/lab6/branch/main)[![Javadoc](https://img.shields.io/static/v1?label=Demo&message=&color=Yellow)](https://or9.ca/Lab6) [![Demo](https://img.shields.io/static/v1?label=Demo&color=Green)](https://youtu.be/BoLrKZb8shM) [![Report](https://img.shields.io/static/v1?label=Report&color=Orange)](https://github.com/orionnelson/lab6/raw/main/Report%20-%20v1.pdf)
+# lab6 [![codecov](https://codecov.io/gh/orionnelson/lab6/branch/main/graph/badge.svg?token=dJEEOahZ8n)](https://codecov.io/gh/orionnelson/lab6/branch/main)[![Javadoc](https://img.shields.io/static/v1?label=Demo&message=view&color=Yellow)](https://or9.ca/Lab6) [![Demo](https://img.shields.io/static/v1?label=Demo&message=view&color=Green)](https://youtu.be/BoLrKZb8shM) [![Report](https://img.shields.io/static/v1?label=Report&message=view&color=Orange)](https://github.com/orionnelson/lab6/raw/main/Report%20-%20v1.pdf)
 
 
 This is a test change the repo link for actual usage of codecov.
