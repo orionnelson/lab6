@@ -21,12 +21,13 @@ jobs:
     steps:
     - name: Check out the repo
       uses: actions/checkout@v2
+    - name: Setup GraphViz for usage
+      uses: kamiazya/setup-graphviz@v1
     - name: Set up Java
       uses: actions/setup-java@v1
       with:
         java-version: ${{ matrix.java-version }}
-    - name: Setup GraphViz for usage
-      uses: kamiazya/setup-graphviz@v1
+   
     - name: Cache Maven packages
       uses: actions/cache@v2
       with:
