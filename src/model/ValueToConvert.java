@@ -48,18 +48,17 @@ public class ValueToConvert extends ConcreteSubject{
 	
 	/**
 	 * A method to save the current cm input of user.
-	 * It clears the input if invalid input.
-	 * @param input is a whole number.
+	 * It clears the input if invalid.
+	 * @param input is a number.
 	 */
 	public void save(String input) {
-		//Check if number before saving
-		if (input.matches("^\\d+$")) {
-			ValueToConvert.savedInput = Integer.parseInt(input);
+		//Check if proper number before saving
+		try {
+			ValueToConvert.savedInput = Double.parseDouble(input);
 			this.panel.getCMConvArea().setText(input);
-		} else {
-			//Clear as not a number
+		} catch (final NumberFormatException e) {
 			this.panel.getCMConvArea().setText("");
-		}	
+		}
 		notifyObservers();
 	}
 	
