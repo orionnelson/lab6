@@ -77,9 +77,9 @@ Using github workflows for testing we were able to automaticly generate our test
 | actions/checkout@v2  | default action clones repo | 
 | sudo apt-get install graphviz | setup graphviz | 
 | actions/setup-java@v1 | setup java build with versions `11` and `16` |
-|  actions/cache@v2 | Time save caching required pom modules between runs |
+|  actions/cache@v2 | Time save caching required between runs |
 | GabrielBB/xvfb-action@v1 | Screen options get accurate interface options for Robots |
-|  mvn -B test --file pom.xml | Mavern Build Read Pom for Detailed Actions |
+|  mvn -B test --file pom.xml | Mavern Build *Read Pom for Detailed Actions* |
 | jacoco | Inside mavern Build | 
 | javadoc | Inside mavern Build | 
 | nl.talsmasoftware.umldoclet.UMLDoclet |  used for generation of javadoc Diagrams |
