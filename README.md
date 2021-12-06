@@ -58,8 +58,6 @@ On a valid value when accessing the menu bar the calculation is given in the res
 
 ### lab6 converterApp
 
-
-### Testing Methods 
 ## Testing Was Done Using GitHub Workflows
 Using github workflows for testing we were able to automaticly generate our testing coverage and evaluating test cases to rule out bugs in the code. 
 
