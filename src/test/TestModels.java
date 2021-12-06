@@ -77,7 +77,9 @@ public class TestModels{
 		assertEquals(mStr,p.getMeterConvArea().getText());
 	}
 	
-	
+	/**
+	 * Test Cent Area string is updated
+	 */
 	@Test
 	@DisplayName("Test Centimeters Update ")
 	public void testInput(){
@@ -100,9 +102,10 @@ public class TestModels{
 	
 	
 	/**
-	 * Test Cent Area string is updated
+	 * Test Cent Area string is updated #2
 	 */
 	@Test
+	@DisplayName("Test Cent Input2Cent")
 	public void testCentAreaStringToString(){
 		double areaM = 0.25;
 		double areaFt = 0.8202099737532809;
@@ -121,6 +124,7 @@ public class TestModels{
 	 * Test Cent Area string is updated to Null
 	 */
 	@Test
+	@DisplayName("Test Invalid Input")
 	public void testCentAreaStringForNull(){
 		double areaM = 0.25;
 		double areaFt = 0.8202099737532809;
