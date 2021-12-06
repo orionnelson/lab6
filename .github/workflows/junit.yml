@@ -26,7 +26,7 @@ jobs:
       with:
         java-version: ${{ matrix.java-version }}
     - name: Setup GraphViz for usage
-      uses: ts-graphviz/setup-graphviz@v1
+      uses: kamiazya/setup-graphviz@v1
     - name: Cache Maven packages
       uses: actions/cache@v2
       with:
