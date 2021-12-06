@@ -14,17 +14,20 @@ jobs:
 
     strategy:
       matrix:
-        operating-system: [ ubuntu-latest , windows-latest ]
+        operating-system: [ ubuntu-latest ]
         java-version: [11, 16]
     name: Java ${{ matrix.java-version }} Build on ${{ matrix.operating-system }}
 
     steps:
     - name: Check out the repo
       uses: actions/checkout@v2
+    - name: Setup GraphViz for usage
+      run: sudo apt-get install graphviz
     - name: Set up Java
       uses: actions/setup-java@v1
       with:
         java-version: ${{ matrix.java-version }}
+   
     - name: Cache Maven packages
       uses: actions/cache@v2
       with:
