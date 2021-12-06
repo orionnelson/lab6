@@ -1,4 +1,4 @@
-# lab6 [![codecov](https://codecov.io/gh/orionnelson/lab6/branch/main/graph/badge.svg?token=dJEEOahZ8n)](https://codecov.io/gh/orionnelson/lab6/branch/main)
+# lab6 [![codecov](https://codecov.io/gh/orionnelson/lab6/branch/main/graph/badge.svg?token=dJEEOahZ8n)](https://codecov.io/gh/orionnelson/lab6/branch/main)[![Javadoc]](https://or9.ca/Lab6) [![Demo]](https://youtu.be/BoLrKZb8shM) [![Report]](https://github.com/orionnelson/lab6/raw/main/Report%20-%20v1.pdf)
 
 
 This is a test change the repo link for actual usage of codecov.
@@ -46,19 +46,17 @@ Inheritance is the concept that allows for the creation of new classes based on 
 
 
 ## Runtime Code
-Runs 
-
+Runs a new ProgFrame which Calls other Actions
 
 ### Game states
-
-On Error the value is set to "".
+On Error the cm value is set to "".
 On a valid value when accessing the menu bar the calculation is given in the respective boxes.
 
 ## Screenshots
 
 | In game    | Game over   |
 | :------------: | :----------: |
-| ![In App](screenshots/in_game.png) |  |
+| ![In App](https://or9.ca/Lab6/img/AppRunning.png) |  |
 `=`
 | Javadoc: https://or9.ca/Lab6 | CodeCov: https://codecov.io/gh/orionnelson/lab6/ |
 | Demo: https://youtu.be/BoLrKZb8shM |                                                          |
@@ -97,7 +95,8 @@ In the Testing Design Model Testing Targeted the View as shown in the javadoc Cl
 ## Model Coverage
 | Model Coverage |
 | :--------: |
-| ![Model Coverage](https://or9.ca/soccer/testitems/model%20coverage.png) |
+| ![Model Coverage](https://or9.ca/Lab6/img/ModelCoverage.png) |
+|   ![Model Structure](https://or9.ca/Lab6/img/ModelScreenShot.png) |
 | ![codecov](https://codecov.io/gh/orionnelson/lab6/branch/main/graph/icicle.svg?token=dJEEOahZ8n) |
 
 
@@ -111,7 +110,7 @@ Testing was done on the following platforms = [`Windows-Latest`, `Ubuntu-Latest`
 The third category was the Model Tests. These tests were focused on the model and tested the functionality of the methods.  The tests were designed to test the predictability and consistency of the methods, and the results were recorded and compiled into a test matrix. The test matrix was then used to determine the overall reliability of the model.
 | Model  Test Cases                                             | 
 | :-----:                                                       |
-| ![Model](https://or9.ca/soccer/testitems/TestModels.png) |
+| ![Model](https://or9.ca/Lab6/img/ModelTesting.png) |
 
 
 
