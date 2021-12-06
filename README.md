@@ -46,15 +46,8 @@ Inheritance is the concept that allows for the creation of new classes based on 
 
 
 ## Runtime Code
+Runs 
 
-* Main()
-* AbstractConverter()
-* Converter()
-* SwingUtilities.invokeLater()
-* SortedList.sort()
-* SortedList.add()
-* SortedList.remove()
-* SortedList.get()
 
 ### Game states
 
