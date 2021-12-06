@@ -49,7 +49,7 @@ On a valid value when accessing the menu bar the calculation is given in the res
 
 ## Screenshots
 
-| In game    | Game over   |
+| In App    |    |
 | :------------: | :----------: |
 | ![In App](https://or9.ca/Lab6/img/AppRunning.png) |  |
 `=`
