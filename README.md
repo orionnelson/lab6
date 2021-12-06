@@ -58,7 +58,7 @@ On a valid value when accessing the menu bar the calculation is given in the res
 
 | In game    | Game over   |
 | :------------: | :----------: |
-| ![In game](screenshots/in_game.png) | ![Game over](screenshots/game_over.png) |
+| ![In App](screenshots/in_game.png) |  |
 `=`
 | Javadoc: https://or9.ca/Lab6 | CodeCov: https://codecov.io/gh/orionnelson/lab6/ |
 | Demo: https://youtu.be/BoLrKZb8shM |                                                          |
@@ -70,8 +70,23 @@ On a valid value when accessing the menu bar the calculation is given in the res
 ## Testing Was Done Using GitHub Workflows
 Using github workflows for testing we were able to automaticly generate our testing coverage and evaluating test cases to rule out bugs in the code. 
 
-We used this github wiki for this
-https://github.com/robotframework/robotframework/wiki/Testing-Design
+### Workflow Component Actions BreakDown
+| Component    | Usage   |
+| :------------: | :----------: |
+| matrix_build |  Virtualized OS Ubuntu |
+| actions/checkout@v2  | default action clones repo | 
+| sudo apt-get install graphviz | setup graphviz | 
+| actions/setup-java@v1 | setup java build with versions `11` and `16` |
+|  actions/cache@v2 | Time save caching required pom modules between runs |
+| GabrielBB/xvfb-action@v1 | Screen options get accurate interface options for Robots |
+|  mvn -B test --file pom.xml | Mavern Build Read Pom for Detailed Actions |
+| jacoco | Inside mavern Build | 
+| javadoc | Inside mavern Build | 
+| nl.talsmasoftware.umldoclet.UMLDoclet |  used for generation of javadoc Diagrams |
+| attach-javadocs jar | create Jar Lib Javadoc companion |
+|  mvn --batch-mode --update-snapshots verify | generate Mavern Build Jar  |
+| actions/upload-artifact@v2 | Upload Lib and Javadoc Jar To Artifacts (Click Build Summary) | 
+
 
 In the Testing Design Model Testing Targeted the View as shown in the javadoc Class layout.
 
