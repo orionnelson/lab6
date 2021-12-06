@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="test.TestModels" time="0.021" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="test.TestModels" time="0.035" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2021.2.3"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -44,7 +44,7 @@
     <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.3\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.3\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.2.3 test"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.2.3 verify"/>
     <property name="java.home" value="C:\Users\DJ\.jdks\openjdk-17"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -60,6 +60,9 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="test.TestModels" name="test.TestModels.testCentArea" time="0.021"/>
+  <testcase classname="test.TestModels" name="test.TestModels.testCentAreaStringForNull" time="0.021"/>
   <testcase classname="test.TestModels" name="test.TestModels.testCentAreaStringToString" time="0"/>
+  <testcase classname="test.TestModels" name="test.TestModels.testConcreteSubject" time="0.003"/>
+  <testcase classname="test.TestModels" name="test.TestModels.testCentM" time="0.01"/>
+  <testcase classname="test.TestModels" name="test.TestModels.testCentArea" time="0.001"/>
 </testsuite>

@@ -17,21 +17,24 @@ public class ValueToConvert extends ConcreteSubject{
 	/**
 	 * A static double field to hold the latest saved cm input.
 	 */
-<span class="nc" id="L20">	private static double savedInput = 0;</span>
+<span class="fc" id="L20">	private static double savedInput = 0;</span>
 	
 	/**
 	 * A constructor for the class
 	 * @param pan is a panel for the program.
 	 */
-<span class="nc" id="L26">	public ValueToConvert(ProgPanel pan) {</span>
-<span class="nc" id="L27">		this.panel = pan;</span>
+<span class="fc" id="L26">	public ValueToConvert(ProgPanel pan) {</span>
+<span class="fc" id="L27">		this.panel = pan;</span>
 		//Set subject for meter and feet areas
-<span class="nc" id="L29">		this.panel.getMeterConvArea().setSubject(this);</span>
-<span class="nc" id="L30">		this.panel.getFeetConvArea().setSubject(this);</span>
+<span class="fc" id="L29">		this.panel.getMeterConvArea().setSubject(this);</span>
+<span class="fc" id="L30">		this.panel.getFeetConvArea().setSubject(this);</span>
+<span class="fc" id="L31">		this.panel.getCMConvArea().setSubject(this);</span>
 		//add as observers
-<span class="nc" id="L32">		addObserver(this.panel.getFeetConvArea());</span>
-<span class="nc" id="L33">		addObserver(this.panel.getMeterConvArea());</span>
-<span class="nc" id="L34">	}</span>
+<span class="fc" id="L33">		addObserver(this.panel.getFeetConvArea());</span>
+<span class="fc" id="L34">		addObserver(this.panel.getMeterConvArea());</span>
+<span class="fc" id="L35">		addObserver(this.panel.getCMConvArea());</span>
+<span class="fc" id="L36">		notifyObservers();</span>
+<span class="fc" id="L37">	}</span>
 	
 	/**
 	 * A method for other classes to access the
@@ -39,7 +42,7 @@ public class ValueToConvert extends ConcreteSubject{
 	 * @return Returns the cm input
 	 */
 	public static double getSavedInput() {
-<span class="nc" id="L42">		return savedInput;</span>
+<span class="fc" id="L45">		return savedInput;</span>
 	}
 	
 	
@@ -50,14 +53,15 @@ public class ValueToConvert extends ConcreteSubject{
 	 */
 	public void save(String input) {
 		//Check if number before saving
-<span class="nc bnc" id="L53" title="All 2 branches missed.">		if (input.matches(&quot;^\\d+$&quot;)) {</span>
-<span class="nc" id="L54">			ValueToConvert.savedInput = Integer.parseInt(input);</span>
+<span class="fc bfc" id="L56" title="All 2 branches covered.">		if (input.matches(&quot;^\\d+$&quot;)) {</span>
+<span class="fc" id="L57">			ValueToConvert.savedInput = Integer.parseInt(input);</span>
+<span class="fc" id="L58">			this.panel.getCMConvArea().setText(input);</span>
 		} else {
 			//Clear as not a number
-<span class="nc" id="L57">			this.panel.getCMConvArea().setText(&quot;&quot;);</span>
+<span class="fc" id="L61">			this.panel.getCMConvArea().setText(&quot;&quot;);</span>
 		}	
-<span class="nc" id="L59">		notifyObservers();</span>
-<span class="nc" id="L60">	}</span>
+<span class="fc" id="L63">		notifyObservers();</span>
+<span class="fc" id="L64">	}</span>
 	
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

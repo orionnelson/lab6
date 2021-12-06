@@ -29,13 +29,16 @@ import model.MeterConversionArea;
 public class TestModels{
 
 	/**
-	 *  Checks conversion of CentArea to String Self and
+	 * Checks conversion of CentArea to String Self and
 	 * Default Frame for testing
 	 */
 	ProgPanel p = new ProgPanel();
 
+	/**
+	 * Tests CM to ft
+	 */
 	@Test
-	@DisplayName("Test Centimeters Conversion to Area")
+	@DisplayName("Test Centimeters Conversion to ft")
 	public void testCentArea(){
 		double areaM = 0.25;
 		double areaFt = 0.8202099737532809;
@@ -52,6 +55,9 @@ public class TestModels{
 	}
 
 
+	/**
+	 * Test conversion from cm to meters
+	 */
 	@Test
 	@DisplayName("Test Centimeters Conversion to Meters ")
 	public void testCentM(){
@@ -87,17 +93,12 @@ public class TestModels{
 			cmConvArea.setBackground(Color.YELLOW);
 			p.add(cmConvArea);
 
-
-
 			System.out.println(p.getFeetConvArea().getText());
 			System.out.println(p.getMeterConvArea().getText());
 
 			p.getCMConvArea().setText(Double.toString(areaCm));
 
-			assert(Double.parseDouble(p.getCMConvArea().getText()) == areaCm);
-
-
-		assertTrue(true);
+			assertEquals(Double.parseDouble(p.getCMConvArea().getText()),  areaCm);
 	}
 
 	/**
@@ -137,6 +138,9 @@ public class TestModels{
 		assertEquals(p.getCMConvArea().getText(), "");
 	}
 
+	/**
+	 * Test remove method
+	 */
 	@Test
 	@DisplayName("Test Concrete Class Methods")
 	public void testConcreteSubject() {

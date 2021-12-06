@@ -7,9 +7,9 @@ import java.util.List;
  * This is the ConcreteSubject class for the 
  * Observer design pattern.
  */
-<span class="nc" id="L10">public class ConcreteSubject implements Subject {</span>
+<span class="fc" id="L10">public class ConcreteSubject implements Subject {</span>
 
-<span class="nc" id="L12">	private List&lt;Observer&gt; observers = new ArrayList&lt;Observer&gt;();</span>
+<span class="fc" id="L12">	private List&lt;Observer&gt; observers = new ArrayList&lt;Observer&gt;();</span>
 
 	/**
 	 * This method adds an observer to the observers
@@ -18,8 +18,8 @@ import java.util.List;
 	 */
 	@Override
 	public void addObserver(Observer obs) {
-<span class="nc" id="L21">		observers.add(obs);</span>
-<span class="nc" id="L22">	}</span>
+<span class="fc" id="L21">		observers.add(obs);</span>
+<span class="fc" id="L22">	}</span>
 
 	/**
 	 * This method removes an observer from the observers
@@ -28,26 +28,26 @@ import java.util.List;
 	 */
 	@Override
 	public void removeObserver(Observer obs) {
-<span class="nc" id="L31">		observers.remove(obs);	</span>
-<span class="nc" id="L32">	}</span>
+<span class="fc" id="L31">		observers.remove(obs);	</span>
+<span class="fc" id="L32">	}</span>
 
 	/**
 	 * This method notifies observer in the observers list.
 	 */
 	@Override
 	public void notifyObservers() {
-<span class="nc bnc" id="L39" title="All 2 branches missed.">		for (Observer obs : observers) {</span>
-<span class="nc" id="L40">			obs.update();</span>
-<span class="nc" id="L41">		}</span>
-<span class="nc" id="L42">	}</span>
-	
-	
+<span class="fc bfc" id="L39" title="All 2 branches covered.">		for (Observer obs : observers) {</span>
+<span class="fc" id="L40">			obs.update();</span>
+<span class="fc" id="L41">		}</span>
+<span class="fc" id="L42">	}</span>
+
+
 	/**
 	 * Method to obtain current value saved.
 	 * @return the cm input.
 	 */
 	public double getInput() {
-<span class="nc" id="L50">		return ValueToConvert.getSavedInput();</span>
+<span class="fc" id="L50">		return ValueToConvert.getSavedInput();</span>
 	}
 
 
