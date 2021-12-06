@@ -99,8 +99,7 @@ Testing was done on the following platforms = [`Windows-Latest`, `Ubuntu-Latest`
 
 
 ### Model Tests 
-
-The third category was the Model Tests. These tests were focused on the model and tested the functionality of the methods.  The tests were designed to test the predictability and consistency of the methods, and the results were recorded and compiled into a test matrix. The test matrix was then used to determine the overall reliability of the model.
+ These tests were focused on the model and tested the functionality of the methods.  The tests were designed to test the predictability and consistency of the methods, and the results were recorded and compiled into a test matrix. The test matrix was then used to determine the overall reliability of the model.
 | Model  Test Cases                                             | 
 | :-----:                                                       |
 | ![Model](https://or9.ca/Lab6/img/ModelTesting.png) |
