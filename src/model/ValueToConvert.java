@@ -52,7 +52,6 @@ public class ValueToConvert extends ConcreteSubject{
 	 * @param input is a number.
 	 */
 	public void save(String input) {
-		//Check if proper number before saving
 		try {
 			ValueToConvert.savedInput = Double.parseDouble(input);
 			this.panel.getCMConvArea().setText(input);
