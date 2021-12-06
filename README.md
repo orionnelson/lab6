@@ -98,7 +98,7 @@ In the Testing Design Model Testing Targeted the View as shown in the javadoc Cl
 | Model Coverage |
 | :--------: |
 | ![Model Coverage](https://or9.ca/soccer/testitems/model%20coverage.png) |
-| ![codecov](https://codecov.io/gh/orionnelson/lab6/branch/main/graph/sunburst.svg?token=dJEEOahZ8n) |
+| ![codecov](https://codecov.io/gh/orionnelson/lab6/branch/main/graph/icicle.svg?token=dJEEOahZ8n) |
 
 
 ## Platforms 
