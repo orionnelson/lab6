@@ -42,7 +42,7 @@ A collection is a set of objects with the same type. Collections are used to sto
 
 ### Inheritance
 
-Inheritance is the concept that allows for the creation of new classes based on existing ones. In this example, the parent class is `x` which has all the common properties for the converter. The child class is `y` which has all the properties unique to this class.
+Inheritance is the concept that allows for the creation of new classes based on existing ones. In this example, the parent abstract class is `ConcreteSubject` which has all the common properties for the converter. The child class is `Converters` which has all the properties unique to these classes depending on their implementation methods.
 
 
 ## Runtime Code
@@ -80,6 +80,7 @@ In the Testing Design Model Testing Targeted the View as shown in the javadoc Cl
 | Model Tests		|	Tests the Model and View |
 
 ## Model Coverage
+| :--------: |
 | ![Model Coverage](https://or9.ca/soccer/testitems/model%20coverage.png) |
 | ![codecov](https://codecov.io/gh/orionnelson/lab6/branch/main/graph/sunburst.svg?token=dJEEOahZ8n) |
 
