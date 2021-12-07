@@ -1,5 +1,7 @@
 # lab6 [![codecov](https://codecov.io/gh/orionnelson/lab6/branch/main/graph/badge.svg?token=dJEEOahZ8n)](https://codecov.io/gh/orionnelson/lab6/branch/main)[![Javadoc](https://img.shields.io/static/v1?label=Javadoc&message=view&color=yellow)](https://or9.ca/Lab6) [![Demo](https://img.shields.io/static/v1?label=Demo&message=view&color=green)](https://youtu.be/BoLrKZb8shM) [![Report](https://img.shields.io/static/v1?label=Report&message=view&color=orange)](https://github.com/orionnelson/lab6/raw/main/Report%20-%20v1.pdf)
 
+TA: Kazi Mridul, kmridul@yorku.ca
+
 A unit converter written in Java 11 using Java Swing.
 
 Featuring design pattern/principle:
