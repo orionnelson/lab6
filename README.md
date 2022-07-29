@@ -1,4 +1,4 @@
-# lab6 [![codecov](https://codecov.io/gh/orionnelson/lab6/branch/main/graph/badge.svg?token=dJEEOahZ8n)](https://codecov.io/gh/orionnelson/lab6/branch/main)[![Javadoc](https://img.shields.io/static/v1?label=Javadoc&message=view&color=yellow)](https://or9.ca/Lab6) [![Demo](https://img.shields.io/static/v1?label=Demo&message=view&color=green)](https://youtu.be/BoLrKZb8shM) [![Report](https://img.shields.io/static/v1?label=Report&message=view&color=orange)](https://github.com/orionnelson/lab6/raw/main/Report%20-%20v1.pdf)
+# lab6 [![codecov](https://codecov.io/gh/orionnelson/lab6/branch/main/graph/badge.svg?token=dJEEOahZ8n)](https://codecov.io/gh/orionnelson/lab6/branch/main)[![Javadoc](https://img.shields.io/static/v1?label=Javadoc&message=view&color=yellow)](https://or9.ca/soccer) [![Demo](https://img.shields.io/static/v1?label=Demo&message=view&color=green)](https://youtu.be/BoLrKZb8shM) [![Report](https://img.shields.io/static/v1?label=Report&message=view&color=orange)](https://github.com/orionnelson/lab6/raw/main/Report%20-%20v1.pdf)
 
 TA: Kazi Mridul, kmridul@yorku.ca
 
@@ -53,9 +53,9 @@ On a valid value when accessing the menu bar the calculation is given in the res
 
 | In App    |    |
 | :------------: | :----------: |
-| ![In App](https://or9.ca/Lab6/img/AppRunning.png) |  |
+| ![In App](https://or9.ca/soccer/img/AppRunning.png) |  |
 `=`
-| Javadoc: https://or9.ca/Lab6 | CodeCov: https://codecov.io/gh/orionnelson/lab6/ |
+| Javadoc: https://or9.ca/soccer | CodeCov: https://codecov.io/gh/orionnelson/lab6/ |
 | Demo: https://youtu.be/BoLrKZb8shM |                                                          |
 
 ### lab6 converterApp
@@ -90,8 +90,8 @@ In the Testing Design Model Testing Targeted the View as shown in the javadoc Cl
 ## Model Coverage
 | Model Coverage |
 | :--------: |
-| ![Model Coverage](https://or9.ca/Lab6/img/ModelCoverage.png) |
-|   ![Model Structure](https://or9.ca/Lab6/img/ModelScreenShot.png) |
+| ![Model Coverage](https://or9.ca/soccer/img/ModelCoverage.png) |
+|   ![Model Structure](https://or9.ca/soccer/img/ModelScreenShot.png) |
 | ![codecov](https://codecov.io/gh/orionnelson/lab6/branch/main/graph/icicle.svg?token=dJEEOahZ8n) |
 
 
@@ -104,7 +104,7 @@ Testing was done on the following platforms = [`Windows-Latest`, `Ubuntu-Latest`
  These tests were focused on the model and tested the functionality of the methods.  The tests were designed to test the predictability and consistency of the methods, and the results were recorded and compiled into a test matrix. The test matrix was then used to determine the overall reliability of the model.
 | Model  Test Cases                                             | 
 | :-----:                                                       |
-| ![Model](https://or9.ca/Lab6/img/ModelTesting.png) |
+| ![Model](https://or9.ca/soccer/img/ModelTesting.png) |
 
 
 
